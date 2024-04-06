@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="lib/jszip.min.js"></script>
+    <script src="lib/FileSaver.min.js"></script>
+    <script src="gun-generator.js"></script>
+    <title>The Great Bean Shootout Custom Gun Generator</title>
+</head>
+<body>
+    <h1>The Great Bean Shootout Custom Gun Generator</h1>
+
+    <label for="gunNameInput">Gun Name</label>
+    <input type="text" id="gunNameInput" name="gunNameInput">
+
+    <br>
+    <br>
+
+    <label for="amountOfBulletsToShootInput">Amount of bullets to shoot</label>
+    <input type="number" id="amountOfBulletsToShootInput" name="amountOfBulletsToShootInput">
+
+    <br>
+    <br>
+
+    <label for="bulletsThatAreUsedInput">Bullets that are used</label>
+    <input type="number" id="bulletsThatAreUsedInput" name="bulletsThatAreUsedInput">
+
+    <br>
+    <br>
+
+    <label for="damageInput">Damage</label>
+    <input type="number" id="damageInput" name="damageInput">
+
+    <br>
+    <br>
+
+    <label for="holdToShootInput">Hold to shoot</label>
+    <input type="checkbox" id="holdToShootInput" name="holdToShootInput">
+
+    <br>
+    <br>
+
+    <label for="delayInput">Delay</label>
+    <input type="number" id="delayInput" name="delayInput">
+
+    <br>
+    <br>
+
+    <label for="imageInput">Image</label>
+    <input type="file" id="imageInput" name="image">
+
+    <br>
+    <br>
+    <br>
+
+    <button type="button" onclick="generate()">Generate (GunName).zip</button>
+</body>
+</html>

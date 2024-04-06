@@ -1,0 +1,10 @@
+@font-face {
+    font-family: ssp;
+    src: url(font/SourceSansPro-Regular.ttf);
+}
+
+body {
+    font-family: ssp;
+    background-color: #2E2527;
+    color: white;
+}
