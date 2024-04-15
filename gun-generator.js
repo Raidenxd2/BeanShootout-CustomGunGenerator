@@ -6,6 +6,7 @@ function generate() {
     const damageInput = document.getElementById("damageInput");
     const holdToShootInput = document.getElementById("holdToShootInput");
     const delayInput = document.getElementById("delayInput");
+    const shootBackwardsInput = document.getElementById("shootBackwardsInput");
     const imageInput = document.getElementById("imageInput");
 
     // Create object with values
@@ -15,6 +16,7 @@ function generate() {
     obj.BulletsThatAreUsed = bulletsThatAreUsedInput.value;
     obj.Damage = damageInput.value;
     obj.HoldToShoot = holdToShootInput.value;
+    obj.ShootBackwards = shootBackwardsInput.value;
     obj.Delay = delayInput.value;
 
     // Create JSON
@@ -26,6 +28,7 @@ function generate() {
     zip.file("gun.json", jsonString);
     zip.file("image.png", imageInput.files[0])
 
+    // Download the Zip
     zip.generateAsync({type: "blob"})
     .then(function(content) {
         saveAs(content, gunNameInput.value + ".zip");
