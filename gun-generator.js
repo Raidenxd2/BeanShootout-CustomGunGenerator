@@ -15,8 +15,8 @@ function generate() {
     obj.AmountOfBulletsToShoot = amountOfBulletsToShootInput.value;
     obj.BulletsThatAreUsed = bulletsThatAreUsedInput.value;
     obj.Damage = damageInput.value;
-    obj.HoldToShoot = holdToShootInput.value;
-    obj.ShootBackwards = shootBackwardsInput.value;
+    obj.HoldToShoot = holdToShootInput.checked;
+    obj.ShootBackwards = shootBackwardsInput.checked;
     obj.Delay = delayInput.value;
 
     // Create JSON
